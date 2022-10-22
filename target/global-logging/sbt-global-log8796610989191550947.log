@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(protoc, None, None)[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid command: protoc (similar: project, projects, export)[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid project ID: protoc (similar: root)[0m
+[0m[[0m[31merror[0m] [0m[0mExpected ':'[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid key: protoc (similar: protocCache, protocVersion, protocTargets)[0m
+[0m[[0m[31merror[0m] [0m[0mprotoc[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

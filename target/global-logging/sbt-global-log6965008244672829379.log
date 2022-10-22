@@ -1,0 +1,69 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 protobuf files to /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E046] Cyclic Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/Homework2/gRPC_communication/isPresentServiceGrpc.scala:32:50 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m32 |[0m    [33mimplicit[0m [33mdef[0m [36mserviceCompanion[0m: _root_.scalapb.grpc.ServiceCompanion[[35misPresentService[0m] = [33mthis[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                  ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                      Cyclic reference involving method serviceCompanion[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E046] Cyclic Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/Homework2/gRPC_communication/isPresentServiceGrpc.scala:71:45 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m71 |[0m    [33mimplicit[0m [33mval[0m [36mstubFactory[0m: _root_.io.grpc.stub.AbstractStub.StubFactory[[35misPresentServiceStub[0m] = [33mthis[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                             ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                              Cyclic reference involving val stubFactory[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/Homework2/gRPC_communication/isPresentServiceGrpc.scala:68:53 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m68 |[0m  [33mobject[0m [35misPresentServiceStub[0m [33mextends[0m _root_.io.grpc.stub.AbstractStub.StubFactory[[35misPresentServiceStub[0m] {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                      ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m         value stub is not a member of io.grpc - did you mean grpc.util?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/Homework2/gRPC_communication/isPresentServiceGrpc.scala:60:159 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m60 |[0m  [33mclass[0m [35misPresentServiceStub[0m([36mchannel[0m: _root_.io.grpc.Channel, [36moptions[0m: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) [33mextends[0m _root_.io.grpc.stub.AbstractStub[[35misPresentServiceStub[0m](channel, options) [33mwith[0m [35misPresentService[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                                                                                                ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m         value stub is not a member of io.grpc - did you mean grpc.util?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/Homework2/gRPC_communication/isPresentServiceGrpc.scala:26:48 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m  [33mtrait[0m [35misPresentService[0m [33mextends[0m _root_.scalapb.grpc.AbstractService {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                 ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                 value grpc is not a member of scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/Homework2/gRPC_communication/isPresentServiceGrpc.scala:52:167 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m  [33mclass[0m [35misPresentServiceBlockingStub[0m([36mchannel[0m: _root_.io.grpc.Channel, [36moptions[0m: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) [33mextends[0m _root_.io.grpc.stub.AbstractStub[[35misPresentServiceBlockingStub[0m](channel, options) [33mwith[0m [35misPresentServiceBlockingClient[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m         value stub is not a member of io.grpc - did you mean grpc.util?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/Homework2/gRPC_communication/isPresentServiceGrpc.scala:31:49 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m31 |[0m  [33mobject[0m [35misPresentService[0m [33mextends[0m _root_.scalapb.grpc.ServiceCompanion[[35misPresentService[0m] {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                  ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  value grpc is not a member of scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/Homework2/gRPC_communication/isPresentServiceGrpc.scala:15:43 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m15 |[0m      .setRequestMarshaller(_root_.scalapb.grpc.Marshaller.forMessage[Homework2.gRPC_communication.isPresentRequest])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                            ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                            value grpc is not a member of scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/Homework2/gRPC_communication/isPresentServiceGrpc.scala:16:44 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m16 |[0m      .setResponseMarshaller(_root_.scalapb.grpc.Marshaller.forMessage[Homework2.gRPC_communication.isPresentResponse])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                             ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                             value grpc is not a member of scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/Homework2/gRPC_communication/isPresentServiceGrpc.scala:17:42 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m      .setSchemaDescriptor(_root_.scalapb.grpc.ConcreteProtoMethodDescriptorSupplier.fromMethodDescriptor(Homework2.gRPC_communication.GRPCCommunicationProto.javaDescriptor.getServices().get([31m0[0m).getMethods().get([31m0[0m)))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                           ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                           value grpc is not a member of scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/Homework2/gRPC_communication/isPresentServiceGrpc.scala:22:46 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m22 |[0m      .setSchemaDescriptor([33mnew[0m _root_.scalapb.grpc.ConcreteProtoFileDescriptorSupplier(Homework2.gRPC_communication.GRPCCommunicationProto.javaDescriptor))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                               ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                               value grpc is not a member of scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/Homework2/gRPC_communication/isPresentServiceGrpc.scala:39:23 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m39 |[0m        _root_.io.grpc.stub.ServerCalls.asyncUnaryCall([33mnew[0m _root_.io.grpc.stub.ServerCalls.UnaryMethod[Homework2.gRPC_communication.isPresentRequest, Homework2.gRPC_communication.isPresentResponse] {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m        ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m        value stub is not a member of io.grpc - did you mean grpc.util?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/Homework2/gRPC_communication/isPresentServiceGrpc.scala:54:21 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m54 |[0m      _root_.scalapb.grpc.ClientCalls.blockingUnaryCall(channel, METHOD_ECHO, options, request)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      value grpc is not a member of scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/Homework2/gRPC_communication/isPresentServiceGrpc.scala:62:21 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m62 |[0m      _root_.scalapb.grpc.ClientCalls.asyncUnaryCall(channel, METHOD_ECHO, options, request)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      value grpc is not a member of scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m14 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Oct 22, 2022, 1:50:51 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

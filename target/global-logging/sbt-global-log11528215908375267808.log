@@ -1,0 +1,133 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 protobuf files to /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E046] Cyclic Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:32:50 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m32 |[0m    [33mimplicit[0m [33mdef[0m [36mserviceCompanion[0m: _root_.scalapb.grpc.ServiceCompanion[[35misPresentService[0m] = [33mthis[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                  ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                      Cyclic reference involving method serviceCompanion[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E046] Cyclic Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:71:37 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m71 |[0m    [33mimplicit[0m [33mval[0m [36mstubFactory[0m: _root_.io.grpc.stub.AbstractStub.StubFactory[[35misPresentServiceStub[0m] = [33mthis[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                     ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                              Cyclic reference involving val stubFactory[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:68:45 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m68 |[0m  [33mobject[0m [35misPresentServiceStub[0m [33mextends[0m _root_.io.grpc.stub.AbstractStub.StubFactory[[35misPresentServiceStub[0m] {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                      ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:60:45 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m60 |[0m  [33mclass[0m [35misPresentServiceStub[0m([36mchannel[0m: _root_.io.grpc.Channel, [36moptions[0m: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) [33mextends[0m _root_.io.grpc.stub.AbstractStub[[35misPresentServiceStub[0m](channel, options) [33mwith[0m [35misPresentService[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                      ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:60:78 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m60 |[0m  [33mclass[0m [35misPresentServiceStub[0m([36mchannel[0m: _root_.io.grpc.Channel, [36moptions[0m: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) [33mextends[0m _root_.io.grpc.stub.AbstractStub[[35misPresentServiceStub[0m](channel, options) [33mwith[0m [35misPresentService[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                       ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:60:151 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m60 |[0m  [33mclass[0m [35misPresentServiceStub[0m([36mchannel[0m: _root_.io.grpc.Channel, [36moptions[0m: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) [33mextends[0m _root_.io.grpc.stub.AbstractStub[[35misPresentServiceStub[0m](channel, options) [33mwith[0m [35misPresentService[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                                                                                                ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:26:48 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m  [33mtrait[0m [35misPresentService[0m [33mextends[0m _root_.scalapb.grpc.AbstractService {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                 ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                 value grpc is not a member of scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:52:53 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m  [33mclass[0m [35misPresentServiceBlockingStub[0m([36mchannel[0m: _root_.io.grpc.Channel, [36moptions[0m: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) [33mextends[0m _root_.io.grpc.stub.AbstractStub[[35misPresentServiceBlockingStub[0m](channel, options) [33mwith[0m [35misPresentServiceBlockingClient[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                              ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:52:86 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m  [33mclass[0m [35misPresentServiceBlockingStub[0m([36mchannel[0m: _root_.io.grpc.Channel, [36moptions[0m: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) [33mextends[0m _root_.io.grpc.stub.AbstractStub[[35misPresentServiceBlockingStub[0m](channel, options) [33mwith[0m [35misPresentServiceBlockingClient[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                               ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:52:159 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m  [33mclass[0m [35misPresentServiceBlockingStub[0m([36mchannel[0m: _root_.io.grpc.Channel, [36moptions[0m: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) [33mextends[0m _root_.io.grpc.stub.AbstractStub[[35misPresentServiceBlockingStub[0m](channel, options) [33mwith[0m [35misPresentServiceBlockingClient[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                                                                                                        ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:31:49 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m31 |[0m  [33mobject[0m [35misPresentService[0m [33mextends[0m _root_.scalapb.grpc.ServiceCompanion[[35misPresentService[0m] {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                  ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  value grpc is not a member of scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:10:26 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m  [33mval[0m [36mMETHOD_ECHO[0m: _root_.io.grpc.MethodDescriptor[HomeWork2.gRPC_communication.isPresentRequest, HomeWork2.gRPC_communication.isPresentResponse] =[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                   ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                   value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:11:11 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m    _root_.io.grpc.MethodDescriptor.newBuilder()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:20:22 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m20 |[0m  [33mval[0m [36mSERVICE[0m: _root_.io.grpc.ServiceDescriptor =[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m               ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:21:11 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m    _root_.io.grpc.ServiceDescriptor.newBuilder([31m"HomeWork2.isPresentService"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:35:112 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m35 |[0m    [33mdef[0m [36mbindService[0m([36mserviceImpl[0m: [35misPresentService[0m, [36mexecutionContext[0m: scala.concurrent.ExecutionContext): _root_.io.grpc.ServerServiceDefinition =[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                                                         ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:36:13 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m      _root_.io.grpc.ServerServiceDefinition.builder(SERVICE)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:54:21 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m54 |[0m      _root_.scalapb.grpc.ClientCalls.blockingUnaryCall(channel, METHOD_ECHO, options, request)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      value grpc is not a member of scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:57:39 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m57 |[0m    [33moverride[0m [33mdef[0m build(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions): isPresentServiceBlockingStub = [33mnew[0m isPresentServiceBlockingStub(channel, options)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:57:72 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m57 |[0m    [33moverride[0m [33mdef[0m build(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions): isPresentServiceBlockingStub = [33mnew[0m isPresentServiceBlockingStub(channel, options)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                 ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:52:115 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m  [33mclass[0m [35misPresentServiceBlockingStub[0m([36mchannel[0m: _root_.io.grpc.Channel, [36moptions[0m: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) [33mextends[0m _root_.io.grpc.stub.AbstractStub[[35misPresentServiceBlockingStub[0m](channel, options) [33mwith[0m [35misPresentServiceBlockingClient[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                                                            ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:62:21 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m62 |[0m      _root_.scalapb.grpc.ClientCalls.asyncUnaryCall(channel, METHOD_ECHO, options, request)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      value grpc is not a member of scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:65:39 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m65 |[0m    [33moverride[0m [33mdef[0m build(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions): isPresentServiceStub = [33mnew[0m isPresentServiceStub(channel, options)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:65:72 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m65 |[0m    [33moverride[0m [33mdef[0m build(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions): isPresentServiceStub = [33mnew[0m isPresentServiceStub(channel, options)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                 ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:60:107 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m60 |[0m  [33mclass[0m [35misPresentServiceStub[0m([36mchannel[0m: _root_.io.grpc.Channel, [36moptions[0m: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) [33mextends[0m _root_.io.grpc.stub.AbstractStub[[35misPresentServiceStub[0m](channel, options) [33mwith[0m [35misPresentService[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                                                    ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:69:41 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m69 |[0m    [33moverride[0m [33mdef[0m newStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions): isPresentServiceStub = [33mnew[0m isPresentServiceStub(channel, options)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                  ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:69:74 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m69 |[0m    [33moverride[0m [33mdef[0m newStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions): isPresentServiceStub = [33mnew[0m isPresentServiceStub(channel, options)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                   ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:74:110 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m74 |[0m  [33mdef[0m [36mbindService[0m([36mserviceImpl[0m: [35misPresentService[0m, [36mexecutionContext[0m: scala.concurrent.ExecutionContext): _root_.io.grpc.ServerServiceDefinition = isPresentService.bindService(serviceImpl, executionContext)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                                                       ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                      value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:76:35 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m76 |[0m  [33mdef[0m [36mblockingStub[0m([36mchannel[0m: _root_.io.grpc.Channel): [35misPresentServiceBlockingStub[0m = [33mnew[0m [35misPresentServiceBlockingStub[0m(channel)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                            ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                            value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/nate/IdeaProjects/HomeWork2/target/scala-3.2.0/src_managed/main/scalapb/HomeWork2/gRPC_communication/isPresentServiceGrpc.scala:78:27 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m78 |[0m  [33mdef[0m [36mstub[0m([36mchannel[0m: _root_.io.grpc.Channel): [35misPresentServiceStub[0m = [33mnew[0m [35misPresentServiceStub[0m(channel)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                    ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                    value io is not a member of <root>[0m
+[0m[[0m[31merror[0m] [0m[0m30 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 3 s, completed Oct 22, 2022, 7:53:34 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m
