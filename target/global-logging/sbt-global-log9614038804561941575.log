@@ -1,0 +1,66 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 protobuf files to /home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /home/nate/IdeaProjects/HomeWork2/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:15:44: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      .setRequestMarshaller(_root_.scalapb.grpc.Marshaller.forMessage[scalapb.gRPC_communication.isPresentRequest])[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:16:45: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      .setResponseMarshaller(_root_.scalapb.grpc.Marshaller.forMessage[scalapb.gRPC_communication.isPresentResponse])[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:17:43: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      .setSchemaDescriptor(_root_.scalapb.grpc.ConcreteProtoMethodDescriptorSupplier.fromMethodDescriptor(scalapb.gRPC_communication.GRPCCommunicationProto.javaDescriptor.getServices().get(0).getMethods().get(0)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:22:47: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      .setSchemaDescriptor(new _root_.scalapb.grpc.ConcreteProtoFileDescriptorSupplier(scalapb.gRPC_communication.GRPCCommunicationProto.javaDescriptor))[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:26:49: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m  trait isPresentService extends _root_.scalapb.grpc.AbstractService {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:31:50: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m  object isPresentService extends _root_.scalapb.grpc.ServiceCompanion[isPresentService] {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:32:51: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit def serviceCompanion: _root_.scalapb.grpc.ServiceCompanion[isPresentService] = this[0m
+[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:39:24: object stub is not a member of package io.grpc[0m
+[0m[[0m[31merror[0m] [0m[0m        _root_.io.grpc.stub.ServerCalls.asyncUnaryCall(new _root_.io.grpc.stub.ServerCalls.UnaryMethod[scalapb.gRPC_communication.isPresentRequest, scalapb.gRPC_communication.isPresentResponse] {[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:39:75: object stub is not a member of package io.grpc[0m
+[0m[[0m[31merror[0m] [0m[0m        _root_.io.grpc.stub.ServerCalls.asyncUnaryCall(new _root_.io.grpc.stub.ServerCalls.UnaryMethod[scalapb.gRPC_communication.isPresentRequest, scalapb.gRPC_communication.isPresentResponse] {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:40:110: object stub is not a member of package io.grpc[0m
+[0m[[0m[31merror[0m] [0m[0m          override def invoke(request: scalapb.gRPC_communication.isPresentRequest, observer: _root_.io.grpc.stub.StreamObserver[scalapb.gRPC_communication.isPresentResponse]): _root_.scala.Unit =[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:41:58: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m            serviceImpl.echo(request).onComplete(scalapb.grpc.Grpc.completeObserver(observer))([0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:52:168: object stub is not a member of package io.grpc[0m
+[0m[[0m[31merror[0m] [0m[0m  class isPresentServiceBlockingStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) extends _root_.io.grpc.stub.AbstractStub[isPresentServiceBlockingStub](channel, options) with isPresentServiceBlockingClient {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:52:216: no arguments allowed for nullary constructor Object: (): Object[0m
+[0m[[0m[31merror[0m] [0m[0m  class isPresentServiceBlockingStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) extends _root_.io.grpc.stub.AbstractStub[isPresentServiceBlockingStub](channel, options) with isPresentServiceBlockingClient {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                                                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:54:22: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      _root_.scalapb.grpc.ClientCalls.blockingUnaryCall(channel, METHOD_ECHO, options, request)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:60:160: object stub is not a member of package io.grpc[0m
+[0m[[0m[31merror[0m] [0m[0m  class isPresentServiceStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) extends _root_.io.grpc.stub.AbstractStub[isPresentServiceStub](channel, options) with isPresentService {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:68:54: object stub is not a member of package io.grpc[0m
+[0m[[0m[31merror[0m] [0m[0m  object isPresentServiceStub extends _root_.io.grpc.stub.AbstractStub.StubFactory[isPresentServiceStub] {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:60:200: no arguments allowed for nullary constructor Object: (): Object[0m
+[0m[[0m[31merror[0m] [0m[0m  class isPresentServiceStub(channel: _root_.io.grpc.Channel, options: _root_.io.grpc.CallOptions = _root_.io.grpc.CallOptions.DEFAULT) extends _root_.io.grpc.stub.AbstractStub[isPresentServiceStub](channel, options) with isPresentService {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:62:22: object grpc is not a member of package scalapb[0m
+[0m[[0m[31merror[0m] [0m[0m      _root_.scalapb.grpc.ClientCalls.asyncUnaryCall(channel, METHOD_ECHO, options, request)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/HomeWork2/target/scala-2.13/src_managed/main/scalapb/scalapb/gRPC_communication/isPresentServiceGrpc.scala:71:46: object stub is not a member of package io.grpc[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val stubFactory: _root_.io.grpc.stub.AbstractStub.StubFactory[isPresentServiceStub] = this[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m19 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Oct 22, 2022, 8:16:27 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

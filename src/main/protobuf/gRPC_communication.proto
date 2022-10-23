@@ -1,7 +1,5 @@
 syntax = "proto3";
-
-
-
+package scalapb;
 
 message isPresentRequest {
   string message = 1;
